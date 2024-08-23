@@ -1,0 +1,57 @@
+<div class="types-of-css">
+    <h2>Types of CSS Used in HTML</h2>
+    <!-- <span> -->
+        <p>In HTML, you can use several types of CSS (Cascading Style Sheets) to apply styling. Here’s a rundown of the main types:</p>
+        <ol>
+            <li>
+                <b>Inline CSS:</b>
+                <p>Applied directly within an HTML element using the style attribute.</p>
+                <div class="code">
+                    <app-convertcode [code]="type1"></app-convertcode>
+                </div>
+                <br>
+            </li>
+            <li>
+                <b>Internal CSS:</b>
+                <p>Defined within a <code>&lt;style&gt;</code> tag inside the &lt;head&gt; section of an HTML document.</p>
+                <div class="code">
+                    <app-convertcode [code]="type2"></app-convertcode>
+                </div>
+                <br>
+            </li>
+            <li>
+                <b>External CSS:</b>
+                <p>Stored in a separate .css file and linked to the HTML document using the &lt;link&gt; tag.</p>
+                <div class="code">
+                    <app-convertcode [code]="type3_1"></app-convertcode>
+                </div>
+                <p>Example <b>(styles.css)</b>:</p>
+                <div class="code">
+                    <app-convertcode [code]="type3_2"></app-convertcode>
+                </div>
+                <br>
+            </li>
+            <li>
+                <b>Embedded CSS (similar to Internal CSS):</b>
+                <p>This is sometimes used interchangeably with internal CSS and involves placing the CSS rules within a &lt;style&gt; tag in the HTML document.</p>
+            </li>
+            <li>
+                <b>CSS Preprocessors: </b>
+                <p>Tools like SASS, LESS, or Stylus extend CSS with features like variables and nested rules. Preprocessed files are compiled into regular CSS files that are then linked in HTML.</p>
+            </li>
+            <li>
+                <b>CSS-in-JS:</b>
+                <p>This approach involves writing CSS directly within JavaScript files, often used with libraries or frameworks like React (using styled-components or emotion). It allows for dynamic styling based on JavaScript logic.</p>
+            </li>
+            <li>
+                <b>Custom Properties (CSS Variables):</b>
+                <p>Defined within CSS using the --variable-name syntax, and used throughout your CSS files</p>
+                <div class="code">
+                    <app-convertcode [code]="type4"></app-convertcode>
+                </div>
+                <br>
+            </li>
+        </ol>
+    <!-- </span> -->
+    <p>Each type of CSS serves different needs and has its own use cases, with external CSS being the most common for large projects due to its ability to keep styles separate from content.</p>
+</div>
